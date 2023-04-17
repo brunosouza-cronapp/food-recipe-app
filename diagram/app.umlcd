@@ -1666,7 +1666,7 @@
       "name": "Recipe",
       "position": {
         "x": 116,
-        "y": 1068
+        "y": 1070
       },
       "queries": [],
       "realName": "",
@@ -1874,6 +1874,7 @@
     {
       "angle": 0,
       "attributes": [
+        "id:java.lang.String",
         "creation_date:java.util.Date",
         "comment:java.lang.String",
         "recipe:Recipe",
@@ -1883,7 +1884,7 @@
         ".uml-class-attrs-rect": {
           "fill": "#fffec0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
-          "height": 100,
+          "height": 120,
           "stroke": "#C2C2C2",
           "transform": "translate(0,40)"
         },
@@ -1891,20 +1892,20 @@
           "fill": "#000",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "text": "creation_date\ncomment\n* recipe\n* recipeCategory\n"
+          "text": "* id\ncreation_date\ncomment\nrecipe\nrecipeCategory\n"
         },
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 148,
-          "text": "Date\nString\nRecipe\nRecipeCategory\n"
+          "ref-x": 142,
+          "text": "String\nDate\nString\nRecipe\nRecipeCategory\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#fffec0",
           "height": 20,
           "stroke": "#C2C2C2",
           "stroke-width": 1,
-          "transform": "translate(0,140)"
+          "transform": "translate(0,160)"
         },
         ".uml-class-methods-text": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -1925,6 +1926,42 @@
       },
       "audit": false,
       "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
         {
           "name": "creation_date",
           "type": "java.util.Date",
@@ -2007,7 +2044,7 @@
           "dbDefaultValue": "",
           "label": "Recipe",
           "mask": "",
-          "isPrimaryKey": true,
+          "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": false,
           "pkType": "",
@@ -2043,7 +2080,7 @@
           "dbDefaultValue": "",
           "label": "Recipe Category",
           "mask": "",
-          "isPrimaryKey": true,
+          "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": false,
           "pkType": "",
@@ -2077,8 +2114,8 @@
       "modelType": "Table",
       "name": "RecipeComment",
       "position": {
-        "x": 592,
-        "y": 834
+        "x": 626,
+        "y": 826
       },
       "queries": [],
       "realName": "",
@@ -2086,8 +2123,8 @@
       "role": "AssociationClass",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 140,
-        "width": 243
+        "height": 150,
+        "width": 237
       },
       "swagger": false,
       "tableName": "recipe_comment",
@@ -2117,7 +2154,7 @@
           "fill": "#000",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "text": "* id\ncreation_date\nrate\n* recipe\n* user\n"
+          "text": "* id\ncreation_date\nrate\nrecipe\nuser\n"
         },
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -2269,7 +2306,7 @@
           "dbDefaultValue": "",
           "label": "Recipe",
           "mask": "",
-          "isPrimaryKey": true,
+          "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": false,
           "pkType": "",
@@ -2305,7 +2342,7 @@
           "dbDefaultValue": "",
           "label": "User",
           "mask": "",
-          "isPrimaryKey": true,
+          "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": false,
           "pkType": "",
@@ -5398,6 +5435,12 @@
         }
       ],
       "name": null,
+      "previous_source": {
+        "id": "f1ba906c-c13b-491a-8acc-54d2e29c38a0"
+      },
+      "previous_target": {
+        "id": "abc7dfd1-e9e2-481a-aa68-a44470d8e299"
+      },
       "queries": [],
       "relationFields": [
         "recipe:target"
@@ -5666,31 +5709,10 @@
       ],
       "groupPositions": [
         {
-          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
+          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
           "position": {
-            "x": 70,
-            "y": 240
-          }
-        },
-        {
-          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
-          "position": {
-            "x": 656,
-            "y": 312
-          }
-        },
-        {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
-          "position": {
-            "x": 144,
-            "y": 530
-          }
-        },
-        {
-          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
-          "position": {
-            "x": 100,
-            "y": 34
+            "x": 404,
+            "y": 342
           }
         },
         {
@@ -5701,10 +5723,73 @@
           }
         },
         {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 986,
+            "y": 42
+          }
+        },
+        {
+          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
+          "position": {
+            "x": 70,
+            "y": 240
+          }
+        },
+        {
+          "idCell": "f520ba18-1e74-4810-9a60-ffb2fd06a9d1",
+          "position": {
+            "x": 80,
+            "y": 816
+          }
+        },
+        {
           "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
           "position": {
             "x": 418,
             "y": 594
+          }
+        },
+        {
+          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "position": {
+            "x": 684,
+            "y": 26
+          }
+        },
+        {
+          "idCell": "f1ba906c-c13b-491a-8acc-54d2e29c38a0",
+          "position": {
+            "x": 116,
+            "y": 1070
+          }
+        },
+        {
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "position": {
+            "x": 940,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "abc7dfd1-e9e2-481a-aa68-a44470d8e299",
+          "position": {
+            "x": 626,
+            "y": 826
+          }
+        },
+        {
+          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "position": {
+            "x": 668,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "position": {
+            "x": 144,
+            "y": 530
           }
         },
         {
@@ -5722,59 +5807,17 @@
           }
         },
         {
-          "idCell": "f520ba18-1e74-4810-9a60-ffb2fd06a9d1",
+          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
           "position": {
-            "x": 80,
-            "y": 816
+            "x": 100,
+            "y": 34
           }
         },
         {
-          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
           "position": {
-            "x": 986,
-            "y": 42
-          }
-        },
-        {
-          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
-          "position": {
-            "x": 404,
-            "y": 342
-          }
-        },
-        {
-          "idCell": "abc7dfd1-e9e2-481a-aa68-a44470d8e299",
-          "position": {
-            "x": 592,
-            "y": 834
-          }
-        },
-        {
-          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
-          "position": {
-            "x": 940,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
-          "position": {
-            "x": 668,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "f1ba906c-c13b-491a-8acc-54d2e29c38a0",
-          "position": {
-            "x": 116,
-            "y": 1068
-          }
-        },
-        {
-          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
-          "position": {
-            "x": 684,
-            "y": 26
+            "x": 656,
+            "y": 312
           }
         }
       ]

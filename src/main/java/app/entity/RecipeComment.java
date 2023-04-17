@@ -16,7 +16,6 @@ import cronapi.swagger.CronappSwagger;
 * @generated
 */
 @javax.persistence.Entity
-@IdClass(RecipeCommentPK.class)
 @javax.persistence.Table(name = "\"recipe_comment\"")
 @XmlRootElement
 @CronappSecurity
@@ -32,15 +31,9 @@ public class RecipeComment implements Serializable {
     * @generated
     */
     @Id
-    @JoinColumn(name="fk_recipe", nullable = false, referencedColumnName = "recipe_id", insertable=true, updatable=true)
-        private Recipe recipe;
+    @Column(name = "id", nullable = true, insertable=true, updatable=true)
+        private java.lang.String id = UUID.randomUUID().toString().toUpperCase();
 
-    /**
-    * @generated
-    */
-    @Id
-    @JoinColumn(name="fk_recipeCategory", nullable = false, referencedColumnName = "category_id", insertable=true, updatable=true)
-        private RecipeCategory recipeCategory;
 
     /**
     * @generated
@@ -59,6 +52,22 @@ public class RecipeComment implements Serializable {
         private java.lang.String comment;
 
 
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_recipe", nullable = false, referencedColumnName = "recipe_id", insertable=true, updatable=true)
+        
+        private Recipe recipe;
+
+
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_recipeCategory", nullable = false, referencedColumnName = "category_id", insertable=true, updatable=true)
+        
+        private RecipeCategory recipeCategory;
 
 
     /**
@@ -68,6 +77,24 @@ public class RecipeComment implements Serializable {
     public RecipeComment(){
     }
 
+    /**
+    * Obtém id
+    * return id
+    * @generated
+    */
+    public java.lang.String getId() {
+        return this.id;
+    }
+
+    /**
+    * Define id
+    * @param id id
+    * @generated
+    */
+    public RecipeComment setId(java.lang.String id) {
+        this.id = id;
+        return this;
+    }
     /**
     * Obtém creation_date
     * return creation_date
@@ -149,8 +176,7 @@ public class RecipeComment implements Serializable {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
 RecipeComment object = (RecipeComment)obj;
-        if (recipe != null ? !recipe.equals(object.recipe) : object.recipe != null) return false;
-        if (recipeCategory != null ? !recipeCategory.equals(object.recipeCategory) : object.recipeCategory != null) return false;
+        if (id != null ? !id.equals(object.id) : object.id != null) return false;
         return true;
     }
 
@@ -160,8 +186,7 @@ RecipeComment object = (RecipeComment)obj;
     @Override
     public int hashCode() {
         int result = 1;
-        result = 31 * result + ((recipe == null) ? 0 : recipe.hashCode());
-        result = 31 * result + ((recipeCategory == null) ? 0 : recipeCategory.hashCode());
+        result = 31 * result + ((id == null) ? 0 : id.hashCode());
         return result;
     }
 

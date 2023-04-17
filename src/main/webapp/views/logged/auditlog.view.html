@@ -1,0 +1,290 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="AuditLog">
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-65121">AuditLog</h1>
+<datasource data-component="crn-datasource" filter="" name="AuditLog" entity="app.AuditLog" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;type&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;command&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;date&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;objectData&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;host&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;agent&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;server&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;affectedFields&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;category&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;application&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;error&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" condition="{&quot;maxRecord&quot;:100,&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;type&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+        <div role="search" ng-hide="AuditLog.inserting || AuditLog.editing" data-component="crn-textinput" id="crn-datasource-filter-general65121" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="AuditLog.editing || AuditLog.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid
+            options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;AuditLog&quot;,&quot;entity&quot;:&quot;app.AuditLog&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.AuditLog&quot;,&quot;customId&quot;:&quot;AuditLog&quot;,&quot;name&quot;:&quot;AuditLog&quot;,&quot;customQueryName&quot;:&quot;app.AuditLog&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.AuditLog&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;type&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;command&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;date&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;objectData&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;host&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;agent&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;server&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;affectedFields&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;category&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;application&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;error&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;type&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;command&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;date&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;objectData&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;host&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;agent&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;server&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;affectedFields&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;category&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;application&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;error&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;id&quot;:&quot;app.AuditLog&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;type&quot;,&quot;headerText&quot;:&quot;{{'Type' | translate}}&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contains&quot;,&quot;startswith&quot;:&quot;Starts with&quot;,&quot;endswith&quot;:&quot;Ends With&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;command&quot;,&quot;headerText&quot;:&quot;{{'Command' | translate}}&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contains&quot;,&quot;startswith&quot;:&quot;Starts with&quot;,&quot;endswith&quot;:&quot;Ends With&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;objectData&quot;,&quot;headerText&quot;:&quot;{{'ObjectData' | translate}}&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contains&quot;,&quot;startswith&quot;:&quot;Starts with&quot;,&quot;endswith&quot;:&quot;Ends With&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contains&quot;,&quot;startswith&quot;:&quot;Starts with&quot;,&quot;endswith&quot;:&quot;Ends With&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[],&quot;fillDatasource&quot;:false,&quot;enableModalSaveAdd&quot;:false}"
+            ng-model="vars.grid65121"
+            class=""
+            style=""
+            scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-AuditLog-65121">
+    <section class="form" ng-show="AuditLog.editing || AuditLog.inserting">
+        <form crn-datasource="AuditLog" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startInserting">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startInserting()" aria-label="{{'StartInserting' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-plus" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startEditing">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startEditing()" aria-label="{{'startEditing' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-pencil" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-previous">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.previous()" ng-disabled="!datasource.hasPrevious()" aria-label="{{'Before' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-left" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-next">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.next()" ng-disabled="!datasource.hasNext()" aria-label="{{'Next' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-right" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-remove">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.remove()" aria-label="{{'Remove' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-remove" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_post_65121">
+                    <button class="btn k-button btn-block btn-success btn-fab" ng-click="datasource.post()" aria-label="{{'SaveChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ok" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_cancel_65121">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.cancel()" aria-label="{{'CancelChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ban-circle" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <br/>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-type-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-type" class="">{{'Type' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.type"
+                                        class="form-control k-textbox"
+                                        id="textinput-type"
+                                        placeholder="{{'Type' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="true">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-command-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-command" class="">{{'Command' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.command"
+                                        class="form-control k-textbox"
+                                        id="textinput-command"
+                                        placeholder="{{'Command' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="true">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-objectData-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-objectData" class="">{{'ObjectData' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.objectData"
+                                        class="form-control k-textbox"
+                                        id="textinput-objectData"
+                                        placeholder="{{'ObjectData' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-id-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-id" class="">Id</label>
+                                <input
+                                        type="integer"
+                                        ng-model="AuditLog.active.id"
+                                        class="form-control k-textbox"
+                                        id="textinput-id"
+                                        placeholder="Id"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="true">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-date-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-date" class="">{{'Date' | translate}}</label>
+                                <input
+                                        type="datetime"
+                                        ng-model="AuditLog.active.date"
+                                        class="form-control k-textbox"
+                                        id="textinput-date"
+                                        placeholder="{{'Date' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="true">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-user-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-user" class="">{{'User' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.user"
+                                        class="form-control k-textbox"
+                                        id="textinput-user"
+                                        placeholder="{{'User' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-host-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-host" class="">Host</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.host"
+                                        class="form-control k-textbox"
+                                        id="textinput-host"
+                                        placeholder="Host"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-agent-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-agent" class="">{{'Agent' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.agent"
+                                        class="form-control k-textbox"
+                                        id="textinput-agent"
+                                        placeholder="{{'Agent' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-server-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-server" class="">{{'Server' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.server"
+                                        class="form-control k-textbox"
+                                        id="textinput-server"
+                                        placeholder="{{'Server' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-affectedFields-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-affectedFields" class="">{{'AffectedFields' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.affectedFields"
+                                        class="form-control k-textbox"
+                                        id="textinput-affectedFields"
+                                        placeholder="{{'AffectedFields' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-category-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-category" class="">{{'Category' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.category"
+                                        class="form-control k-textbox"
+                                        id="textinput-category"
+                                        placeholder="{{'Category' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-application-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-application" class="">{{'Application' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.application"
+                                        class="form-control k-textbox"
+                                        id="textinput-application"
+                                        placeholder="{{'Application' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-error-65121" class="">
+                        <div class="form-group">
+                                <label for="textinput-error" class="">{{'Error' | translate}}</label>
+                                <input
+                                        type="text"
+                                        ng-model="AuditLog.active.error"
+                                        class="form-control k-textbox"
+                                        id="textinput-error"
+                                        placeholder="{{'Error' | translate}}"
+                                        mask=""
+                                        mask-placeholder=""
+                                        ng-required="false">
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="AuditLog.editing || AuditLog.inserting">
+        <form>
+            <div>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </div>
+        </form>
+    </section>
+</div>
+
+
+</div>

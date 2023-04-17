@@ -16,7 +16,6 @@ import cronapi.swagger.CronappSwagger;
 * @generated
 */
 @javax.persistence.Entity
-@IdClass(RecipeRatePK.class)
 @javax.persistence.Table(name = "\"recipe_rate\"")
 @XmlRootElement
 @CronappSecurity
@@ -34,20 +33,6 @@ public class RecipeRate implements Serializable {
     @Id
     @Column(name = "id", nullable = false, insertable=true, updatable=true)
         private java.lang.String id = UUID.randomUUID().toString().toUpperCase();
-
-    /**
-    * @generated
-    */
-    @Id
-    @JoinColumn(name="fk_recipe", nullable = false, referencedColumnName = "recipe_id", insertable=true, updatable=true)
-        private Recipe recipe;
-
-    /**
-    * @generated
-    */
-    @Id
-    @JoinColumn(name="fk_user", nullable = false, referencedColumnName = "id", insertable=true, updatable=true)
-        private User user;
 
 
     /**
@@ -67,6 +52,22 @@ public class RecipeRate implements Serializable {
         private java.lang.String rate;
 
 
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_recipe", nullable = false, referencedColumnName = "recipe_id", insertable=true, updatable=true)
+        
+        private Recipe recipe;
+
+
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_user", nullable = false, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private User user;
 
 
     /**
@@ -176,8 +177,6 @@ public class RecipeRate implements Serializable {
         if (obj == null || getClass() != obj.getClass()) return false;
 RecipeRate object = (RecipeRate)obj;
         if (id != null ? !id.equals(object.id) : object.id != null) return false;
-        if (recipe != null ? !recipe.equals(object.recipe) : object.recipe != null) return false;
-        if (user != null ? !user.equals(object.user) : object.user != null) return false;
         return true;
     }
 
@@ -188,8 +187,6 @@ RecipeRate object = (RecipeRate)obj;
     public int hashCode() {
         int result = 1;
         result = 31 * result + ((id == null) ? 0 : id.hashCode());
-        result = 31 * result + ((recipe == null) ? 0 : recipe.hashCode());
-        result = 31 * result + ((user == null) ? 0 : user.hashCode());
         return result;
     }
 

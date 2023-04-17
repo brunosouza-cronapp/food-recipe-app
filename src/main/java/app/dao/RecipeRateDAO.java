@@ -19,6 +19,6 @@ import org.springframework.transaction.annotation.*;
  */
 @Repository("app-RecipeRateDAO")
 @Transactional(transactionManager="app-TransactionManager")
-public interface RecipeRateDAO extends JpaRepository<RecipeRate, RecipeRatePK> {
+public interface RecipeRateDAO extends JpaRepository<RecipeRate, java.lang.String> {
 
 }
