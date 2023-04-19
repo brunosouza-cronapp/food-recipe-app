@@ -51,8 +51,8 @@
       "methods": [],
       "namespace": "app",
       "position": {
-        "x": 0,
-        "y": 114.08393096923828
+        "x": 485.5,
+        "y": 115
       },
       "queries": [],
       "restPath": "/api/rest",
@@ -94,8 +94,8 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 156,
-          "text": "Texto\nTexto\n"
+          "ref-x": 153,
+          "text": "String\nString\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#F0F0F0",
@@ -197,8 +197,8 @@
       "modelType": "Table",
       "name": "Application",
       "position": {
-        "x": 382,
-        "y": 36
+        "x": 1064.5,
+        "y": 55
       },
       "queries": [],
       "realName": "",
@@ -244,7 +244,7 @@
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
           "ref-x": 150,
-          "text": "Texto\nApplication\nUser\n"
+          "text": "String\nApplication\nUser\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#fffec0",
@@ -377,8 +377,8 @@
       "modelType": "Table",
       "name": "ApplicationUser",
       "position": {
-        "x": 1106,
-        "y": 406
+        "x": 1460,
+        "y": 645
       },
       "queries": [],
       "realName": "",
@@ -432,8 +432,8 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 94,
-          "text": "Inteiro\nTexto\nTexto\nData e Hora com Fuso\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
+          "ref-x": 144,
+          "text": "Integer\nString\nString\nTimestamp\nLong Text\nString\nString\nString\nString\nString\nString\nString\nString\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#F0F0F0",
@@ -812,8 +812,8 @@
       "modelType": "Table",
       "name": "AuditLog",
       "position": {
-        "x": 70,
-        "y": 240
+        "x": 801.5,
+        "y": 0
       },
       "queries": [],
       "realName": "",
@@ -827,7 +827,7 @@
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
         "height": 230,
-        "width": 225
+        "width": 213
       },
       "tableName": "AUDIT_LOG",
       "type": "uml.Class",
@@ -861,7 +861,7 @@
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
           "ref-x": 174,
-          "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
+          "text": "String\nString\nString\nString\nString\nString\nString\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#F0F0F0",
@@ -1084,8 +1084,8 @@
       "multitenantContextJsonIgnore": "false",
       "name": "Device",
       "position": {
-        "x": 100,
-        "y": 34
+        "x": 535.5,
+        "y": 30
       },
       "queries": [],
       "restPath": "",
@@ -1094,7 +1094,7 @@
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
         "height": 170,
-        "width": 213
+        "width": 216
       },
       "tableName": "DEVICE",
       "tableScheme": null,
@@ -1127,7 +1127,7 @@
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
           "ref-x": 186,
-          "text": "Texto\nTexto\nTexto\nTexto\nUser\n"
+          "text": "String\nString\nString\nString\nUser\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#F0F0F0",
@@ -1340,8 +1340,8 @@
         "user"
       ],
       "position": {
-        "x": 684,
-        "y": 26
+        "x": 0,
+        "y": 635
       },
       "primaryKeys": [
         "id"
@@ -1365,7 +1365,7 @@
       ],
       "size": {
         "height": 150,
-        "width": 225
+        "width": 228
       },
       "tableName": "LOGIN",
       "type": "uml.Class",
@@ -1400,7 +1400,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 142,
+          "ref-x": 140,
           "text": "String\nString\nString\nString\nDate\nUser\nRecipeCategory\n"
         },
         ".uml-class-methods-rect": {
@@ -1665,8 +1665,8 @@
       "modelType": "Table",
       "name": "Recipe",
       "position": {
-        "x": 116,
-        "y": 1070
+        "x": 1729,
+        "y": 625
       },
       "queries": [],
       "realName": "",
@@ -1707,7 +1707,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 167,
+          "ref-x": 168,
           "text": "String\nString\nString\n"
         },
         ".uml-class-methods-rect": {
@@ -1852,8 +1852,8 @@
       "modelType": "Table",
       "name": "RecipeCategory",
       "position": {
-        "x": 80,
-        "y": 816
+        "x": 1889.5,
+        "y": 350
       },
       "queries": [],
       "realName": "",
@@ -1897,7 +1897,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 142,
+          "ref-x": 140,
           "text": "String\nDate\nString\nRecipe\nRecipeCategory\n"
         },
         ".uml-class-methods-rect": {
@@ -2114,8 +2114,8 @@
       "modelType": "Table",
       "name": "RecipeComment",
       "position": {
-        "x": 626,
-        "y": 826
+        "x": 1860.75,
+        "y": 870
       },
       "queries": [],
       "realName": "",
@@ -2159,7 +2159,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 157,
+          "ref-x": 156,
           "text": "String\nDate\nString\nRecipe\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -2376,8 +2376,8 @@
       "modelType": "Table",
       "name": "RecipeRate",
       "position": {
-        "x": 736,
-        "y": 1048
+        "x": 2147.75,
+        "y": 870
       },
       "queries": [],
       "realName": "",
@@ -2421,7 +2421,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 152,
+          "ref-x": 156,
           "text": "String\nBoolean\nBoolean\nString\nString\nApplication\n"
         },
         ".uml-class-methods-rect": {
@@ -2696,8 +2696,8 @@
         "normalizedName"
       ],
       "position": {
-        "x": 656,
-        "y": 312
+        "x": 394.5,
+        "y": 335
       },
       "primaryKeys": [
         "id"
@@ -2753,7 +2753,7 @@
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
           "ref-x": 142,
-          "text": "Texto\nRole\nSecurable\n"
+          "text": "String\nRole\nSecurable\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#fffec0",
@@ -2905,8 +2905,8 @@
         "securable"
       ],
       "position": {
-        "x": 418,
-        "y": 594
+        "x": 278,
+        "y": 645
       },
       "primaryKeys": [
         "id"
@@ -2959,7 +2959,7 @@
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
           "ref-x": 150,
-          "text": "Texto\nTexto\nApplication\n"
+          "text": "String\nString\nApplication\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#F0F0F0",
@@ -3133,8 +3133,8 @@
         "type"
       ],
       "position": {
-        "x": 404,
-        "y": 342
+        "x": 823.25,
+        "y": 350
       },
       "primaryKeys": [
         "id"
@@ -3201,7 +3201,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 136,
+          "ref-x": 135,
           "text": "String\nInteger\nString\nBoolean\nBoolean\nDate and Time\nString\nString\nString\nString\nString\nBoolean\nString\nBoolean\nString\nString\nDatabase Image\n"
         },
         ".uml-class-methods-rect": {
@@ -3886,8 +3886,8 @@
         "userName"
       ],
       "position": {
-        "x": 986,
-        "y": 42
+        "x": 1092.25,
+        "y": 280
       },
       "primaryKeys": [
         "id"
@@ -3952,8 +3952,8 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 156,
-          "text": "Texto\nRole\nUser\n"
+          "ref-x": 153,
+          "text": "String\nRole\nUser\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#fffec0",
@@ -4105,8 +4105,8 @@
         "user"
       ],
       "position": {
-        "x": 940,
-        "y": 594
+        "x": 535,
+        "y": 645
       },
       "primaryKeys": [
         "id"
@@ -4160,7 +4160,7 @@
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
           "ref-x": 142,
-          "text": "Texto\nSecurable\nUser\n"
+          "text": "String\nSecurable\nUser\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#fffec0",
@@ -4312,8 +4312,8 @@
         "user"
       ],
       "position": {
-        "x": 668,
-        "y": 594
+        "x": 883.25,
+        "y": 645
       },
       "primaryKeys": [
         "id"
@@ -4375,8 +4375,8 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 162,
-          "text": "Texto\nSecurable\nTexto\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nApplication\n"
+          "ref-x": 165,
+          "text": "String\nSecurable\nString\nBoolean\nBoolean\nBoolean\nBoolean\nBoolean\nBoolean\nBoolean\nBoolean\nApplication\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#fffec0",
@@ -4788,8 +4788,8 @@
       "modelType": "Table",
       "name": "View",
       "position": {
-        "x": 144,
-        "y": 530
+        "x": 1176,
+        "y": 600
       },
       "queries": [],
       "realName": "",
@@ -4803,7 +4803,7 @@
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
         "height": 220,
-        "width": 231
+        "width": 234
       },
       "tableName": "VIEW",
       "tableScheme": null,
@@ -5709,115 +5709,115 @@
       ],
       "groupPositions": [
         {
-          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
-          "position": {
-            "x": 404,
-            "y": 342
-          }
-        },
-        {
-          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
-          "position": {
-            "x": 382,
-            "y": 36
-          }
-        },
-        {
-          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
-          "position": {
-            "x": 986,
-            "y": 42
-          }
-        },
-        {
-          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
-          "position": {
-            "x": 70,
-            "y": 240
-          }
-        },
-        {
-          "idCell": "f520ba18-1e74-4810-9a60-ffb2fd06a9d1",
-          "position": {
-            "x": 80,
-            "y": 816
-          }
-        },
-        {
-          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
-          "position": {
-            "x": 418,
-            "y": 594
-          }
-        },
-        {
           "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
           "position": {
-            "x": 684,
-            "y": 26
-          }
-        },
-        {
-          "idCell": "f1ba906c-c13b-491a-8acc-54d2e29c38a0",
-          "position": {
-            "x": 116,
-            "y": 1070
-          }
-        },
-        {
-          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
-          "position": {
-            "x": 940,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "abc7dfd1-e9e2-481a-aa68-a44470d8e299",
-          "position": {
-            "x": 626,
-            "y": 826
-          }
-        },
-        {
-          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
-          "position": {
-            "x": 668,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
-          "position": {
-            "x": 144,
-            "y": 530
+            "x": 0,
+            "y": 635
           }
         },
         {
           "idCell": "81ee7085-f55b-4302-945e-e2043d15a0a2",
           "position": {
-            "x": 736,
-            "y": 1048
+            "x": 2147,
+            "y": 870
           }
         },
         {
-          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
           "position": {
-            "x": 1106,
-            "y": 406
+            "x": 801,
+            "y": 0
+          }
+        },
+        {
+          "idCell": "f1ba906c-c13b-491a-8acc-54d2e29c38a0",
+          "position": {
+            "x": 1729,
+            "y": 625
           }
         },
         {
           "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
           "position": {
-            "x": 100,
-            "y": 34
+            "x": 535,
+            "y": 30
+          }
+        },
+        {
+          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "position": {
+            "x": 883,
+            "y": 645
+          }
+        },
+        {
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "position": {
+            "x": 535,
+            "y": 645
+          }
+        },
+        {
+          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "position": {
+            "x": 1460,
+            "y": 645
+          }
+        },
+        {
+          "idCell": "f520ba18-1e74-4810-9a60-ffb2fd06a9d1",
+          "position": {
+            "x": 1889,
+            "y": 350
+          }
+        },
+        {
+          "idCell": "abc7dfd1-e9e2-481a-aa68-a44470d8e299",
+          "position": {
+            "x": 1860,
+            "y": 870
+          }
+        },
+        {
+          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+          "position": {
+            "x": 278,
+            "y": 645
           }
         },
         {
           "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
           "position": {
-            "x": 656,
-            "y": 312
+            "x": 394,
+            "y": 335
+          }
+        },
+        {
+          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+          "position": {
+            "x": 823,
+            "y": 350
+          }
+        },
+        {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 1092,
+            "y": 280
+          }
+        },
+        {
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "position": {
+            "x": 1176,
+            "y": 600
+          }
+        },
+        {
+          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+          "position": {
+            "x": 1064,
+            "y": 55
           }
         }
       ]
