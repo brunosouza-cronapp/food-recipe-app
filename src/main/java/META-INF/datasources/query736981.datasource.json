@@ -1,0 +1,204 @@
+{
+  "customId": "recipecustom",
+  "queryName": "recipe_custom",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Recipe",
+  "entityFullName": "app.entity.Recipe",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Recipe",
+        "namespace": "app.entity.Recipe",
+        "dataSourceOptions": {
+          "id": "app.Recipe",
+          "customId": "Recipe",
+          "customQueryName": "app.Recipe",
+          "paramValues": [],
+          "entityFullName": "app.entity.Recipe",
+          "schemaFields": [
+            {
+              "name": "recipe_id",
+              "type": "String",
+              "nullable": false,
+              "key": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "nullable": false,
+              "key": false
+            },
+            {
+              "name": "description",
+              "type": "String",
+              "nullable": false,
+              "key": false
+            },
+            {
+              "name": "instructions",
+              "type": "String",
+              "nullable": false,
+              "key": false
+            },
+            {
+              "name": "creation_date",
+              "type": "DateTime",
+              "nullable": false,
+              "key": false
+            },
+            {
+              "name": "user",
+              "type": "String",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "recipeCategory",
+              "type": "String",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "key": true
+            },
+            {
+              "name": "user_name",
+              "type": "String",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "recipeCategory_name",
+              "type": "String",
+              "nullable": true,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "Recipe",
+          "fullName": "app.entity.Recipe",
+          "labelName": "app.entity.Recipe (Recipe)"
+        },
+        "alias": "r"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "r",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "r.recipe_id",
+          "field": "r.recipe_id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":recipe_id",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "recipe_id",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "recipe_id": null,
+    "name": null,
+    "description": null,
+    "instructions": null,
+    "creation_date": null,
+    "user": null,
+    "recipeCategory": null,
+    "user_name": null,
+    "recipeCategory_name": null
+  },
+  "defaultValuesProperties": {
+    "recipe_id": null,
+    "name": null,
+    "description": null,
+    "instructions": null,
+    "creation_date": null,
+    "user": null,
+    "recipeCategory": null,
+    "user_name": null,
+    "recipeCategory_name": null
+  },
+  "security": {
+    "recipe_id": null,
+    "name": null,
+    "description": null,
+    "instructions": null,
+    "creation_date": null,
+    "user": null,
+    "recipeCategory": null,
+    "user_name": null,
+    "recipeCategory_name": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query736981/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
